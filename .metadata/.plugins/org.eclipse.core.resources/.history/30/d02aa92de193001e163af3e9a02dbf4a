@@ -1,0 +1,19 @@
+package javaBasic.ch04.sec01;
+
+public class 확인문제4장 {
+
+	public static void main(String[] args) {
+		onehund();
+		
+
+	}
+	
+	public static void onehund()
+	{
+		for(int i=1; i<=100; i++)
+		{
+			System.out.println(i);
+		}
+	}
+
+}

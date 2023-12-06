@@ -1,0 +1,32 @@
+package javaBasic.ch03.sec01;
+
+public class 변수복수 {
+
+	public static void main(String[] args) {
+		String carName1 = "싼타패";
+		String carName2 = "코란다";
+		
+		int carPay1 = 35000000;
+		int carPay2 = 24000000;
+		
+		int paidment1 = 15000000;
+		int paidment2 = 5000000;
+		
+		int monthlyPay1 = 20000000;
+		int monthlyPay2 = 19000000;
+		
+		int repay1 = 36;
+		int repay2 = 24;
+		
+		int monthDeposit1 = 55555556;
+		int monthDeposit2 = 79166667;
+		
+		System.out.println("차량명: "+carName1+"차량총액: "+carPay1+"인도금 :"+paidment1+"할부원금: "+monthlyPay1+"상환기간(월): "+repay1+"월납입금: "+monthDeposit1);
+		System.out.println("차량명: "+carName2+"차량총액: "+carPay2+"인도금 :"+paidment2+"할부원금: "+monthlyPay2+"상환기간(월): "+repay2+"월납입금: "+monthDeposit2);
+		
+		
+		
+
+	}
+
+}

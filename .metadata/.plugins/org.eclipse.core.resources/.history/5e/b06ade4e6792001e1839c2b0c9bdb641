@@ -1,0 +1,49 @@
+package javaBasic.ch01.sec15;
+
+public class DataType {
+
+	public static void main(String[] args) {
+		// byte short int long {1,2,4,8 바이트}
+		// float double {4.8 바이트}
+
+		
+		float f3 = 10.23f;
+		float f4 = 2.45f;
+		
+		float result = f3*f4;
+		
+		
+		double d3=3.14;
+		double d4 =12.65;
+		double result1 = d3*d4;
+				
+		System.out.print(result+"\n");
+		System.out.print(result1+"\n");
+		
+		double d10= 3.14;
+		int chageDouble = (int)d10;
+		System.out.println(d10+" "+chageDouble);
+		
+		float f10 = 10.25f;
+		byte changef10 = (byte)f10;
+		
+		int i10 = 3000;
+		short chi10 = (short)i10;
+		
+		int korean = 95;
+		int math = 80;
+		int english =85;
+		
+		int sum = korean+math+english;
+		float aver = (float)sum/3;
+		System.out.println("합계:"+sum);
+		System.out.println("평균:"+aver);
+		System.out.println("수학점수 제곱:"+math*math);
+		
+		char ch1 = 'a';
+		System.out.print(ch1);
+		
+			
+	}
+
+}

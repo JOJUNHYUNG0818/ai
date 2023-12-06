@@ -1,0 +1,56 @@
+package javaBasic.ch04.sec01;
+
+public class If문 {
+
+	public static void main(String[] args) {
+		int score =  87;
+		
+		if(score>=90)
+		{
+			System.out.println("A");
+		}
+		else if(score>80 && score<90)
+		{
+			System.out.println("B");
+		}
+		else if(score>70 && score<80)
+		{
+			System.out.println("C");
+		}
+		else
+		{
+			System.out.println("D");
+		}
+		
+		int d=10;
+		float e = 2.14f;
+		boolean f= true;
+		
+		
+		if(d!=0 && Double.isNaN(e)&& f== false)
+		{
+			System.out.println("잘못된 코드입니다");
+		}
+		else
+		{
+			System.out.println("훌륭한 코드입니다.");
+		}
+		
+		int number = 1;
+		
+		if(number==1)
+		{
+			System.out.println("일");
+		}
+		else if (number==2)
+		{
+			System.out.println("이");
+		}
+		else if(number==3)
+		{
+			System.out.println("삼");
+		}
+		
+		
+	}
+}

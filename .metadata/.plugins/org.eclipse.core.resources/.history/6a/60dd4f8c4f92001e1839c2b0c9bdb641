@@ -1,0 +1,18 @@
+package javaBasic.ch01.sec12;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		String name = "Èä±æµ¿";
+		int basicPay = 50000;
+		String phoneNumber = "010-1234-1234";
+		String accountNumber = "±¹¹Î 123-12-1234";
+		String dept = "¾Ë¹Ù»ý";
+		boolean sex = true;
+		double tex = 0.03;
+		
+		
+		System.out.println(name+"\n"+basicPay+" "+phoneNumber+" "+accountNumber+" "+dept+" "+sex+" "+tex);
+	}
+
+}

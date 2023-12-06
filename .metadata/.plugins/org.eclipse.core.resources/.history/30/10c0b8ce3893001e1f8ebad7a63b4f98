@@ -1,0 +1,26 @@
+package javaBasic.ch04.sec01;
+import java.util.Scanner;
+
+public class Switch¹® {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String eng = sc.next();
+		
+		
+		switch(eng)
+		{
+		case "A": System.out.println("Apple");
+			break;
+		case "B": System.out.println("Bear");
+			break;
+		case "C": System.out.println("Cat");
+			break;
+		
+		
+		
+		}		
+	}
+
+}

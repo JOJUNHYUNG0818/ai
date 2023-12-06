@@ -1,0 +1,34 @@
+package javaBasic.ch03.sec02;
+
+public class Operator01 {
+
+	public static void main(String[] args) {
+
+		int number = 10;
+		number += 1;
+		System.out.println(number);
+		
+		number -= 1;
+		System.out.println(number);
+		
+		number++;
+		System.out.println(number);
+		
+		number--;
+		System.out.println(number);
+		
+		++number;
+		System.out.println(number);
+		
+		--number;
+		System.out.println(number);
+		
+		
+		int number1 = 100; 
+		
+		number1 +=1;
+		System.out.println(number1);
+		
+	}
+
+}

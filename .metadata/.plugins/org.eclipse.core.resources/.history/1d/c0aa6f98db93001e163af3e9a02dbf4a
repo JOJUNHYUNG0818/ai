@@ -1,0 +1,29 @@
+package javaBasic.ch04.sec01;
+
+public class for¹® {
+
+	public static void main(String[] args) {
+		
+		//exFor2();
+		exFor3();
+
+	}
+
+	
+	public static void exFor2()
+	{
+		for(int i=1, j=10; i<=10 || j<=19; i++,j++)
+		{
+			System.out.println(i+" "+j);
+		}
+	}
+	
+	public static void exFor3()
+	{
+		for(int i=1, j=100, k= 200; i<100 || j<=200 || k<=300 ; i++,j++,k++)
+		{
+			System.out.println(i+" "+j+" "+k);
+		}
+	}
+}
+

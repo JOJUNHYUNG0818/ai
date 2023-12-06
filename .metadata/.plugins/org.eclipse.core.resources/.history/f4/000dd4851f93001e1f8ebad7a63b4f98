@@ -1,0 +1,26 @@
+package javaBasic.ch03.sec02;
+
+public class 대입연산자102 {
+
+	public static void main(String[] args) {
+		int count = 100;
+		count +=10; //count = count + 10;
+		
+		System.out.println(count);
+		
+		count -=20;
+		System.out.println(count);
+		
+		count *= 5; //count = count*5;
+		count /= 10;
+		count %= 5;
+		
+		boolean b1 = true;
+		
+		b1 &= false;
+		
+		b1 |= true;
+		
+	}
+
+}
