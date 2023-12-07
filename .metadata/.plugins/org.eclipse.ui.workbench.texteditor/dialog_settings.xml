@@ -10,7 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="&#x09;&#x09;"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -3,6 +3,7 @@
     <fullyQualifiedTypeName name="javaBasic.ch01.sec15.DataType"/>
     <fullyQualifiedTypeName name="java.awt.SystemColor"/>
     <fullyQualifiedTypeName name="java.util.ServiceConfigurationError"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
