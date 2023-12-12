@@ -9,7 +9,11 @@
     <fullyQualifiedTypeName name="javaBasic3.ch06.sec10.Calculator"/>
     <fullyQualifiedTypeName name="javaBasic3.ch06.sec05.Singleton"/>
     <fullyQualifiedTypeName name="javax.security.auth.login.AccountException"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec15.Account"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="javaBasic3.ch06.sec011.Calculator"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="javaBasic3.ch06.sec011.Computer"/>
+    <fullyQualifiedTypeName name="javaBasic3.ch06.sec13.Television"/>
+    <fullyQualifiedTypeName name="javaBasic3.ch06.sec15.Account"/>
 </qualifiedTypeNameHistroy>

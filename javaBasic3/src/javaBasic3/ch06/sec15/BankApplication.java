@@ -33,6 +33,7 @@ public class BankApplication {
 				int money=sc.nextInt();
 				
 				Account newCount =new  Account(accountNum, owner, money);
+				
 				for(int i=0; i<accountArray.length; i++)
 				{
 					if(accountArray[i]==null)
