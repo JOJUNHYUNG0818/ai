@@ -120,16 +120,18 @@ public class BankApplication {
 		
 	}
 
-	private static Account findAccount(String accountNum) {
+	private static Account findAccount(String accountNum)
+	{
         Account account = null;
-        for(int i =0; i <accountArray.length; i++){
+        for(int i =0; i <accountArray.length; i++)
+        {
             
-            if(accountArray[i] != null){
-                
+            if(accountArray[i] != null)
+            {
                 String dbAno = accountArray[i].getAccountNum();
                 
-                if(dbAno.equals(accountNum)){
-                    
+                if(dbAno.equals(accountNum))
+                {
                     account = accountArray[i];
                     break;
                 }
