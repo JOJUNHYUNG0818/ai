@@ -38,6 +38,24 @@
     <fullyQualifiedTypeName name="java.lang.System.Logger"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.sec013.HankookTire"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.sec013.KumhoTire"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.sec013.Connect"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec014.Driver"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec014.Bus"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec014.Vehicle"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.Phone"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.Calling"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.IPhone"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.SmartPhone"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제07.Machine"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제07.Computer"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제0711.Activity"/>
+    <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제0711.MainActivity"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec01.A"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.CCImple"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.Television"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.SmartPhone"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.RemoteControl"/>
+    <fullyQualifiedTypeName name="javax.swing.ViewportLayout"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec03.Vehicle"/>
 </qualifiedTypeNameHistroy>
