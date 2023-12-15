@@ -17,7 +17,7 @@ public class RemoteControlExample {
 		rc.turnOff();
 		
 		rc.defaultM();
-		RemoteControl.staticM();
+		RemoteControl.staticM(); // 정적 메소드 객체구현없이 사용가능
 		
 		
 

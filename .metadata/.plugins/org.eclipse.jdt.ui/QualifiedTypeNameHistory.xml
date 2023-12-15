@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javaBasic.ch01.sec15.DataType"/>
-    <fullyQualifiedTypeName name="java.awt.SystemColor"/>
-    <fullyQualifiedTypeName name="java.util.ServiceConfigurationError"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="javaBasic3.ch06.sec10.Calculator"/>
     <fullyQualifiedTypeName name="javaBasic3.ch06.sec05.Singleton"/>
@@ -58,4 +53,11 @@
     <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.RemoteControl"/>
     <fullyQualifiedTypeName name="javax.swing.ViewportLayout"/>
     <fullyQualifiedTypeName name="javaBasic5.ch08.sec03.Vehicle"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec03.CarRun"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec04.Remocon"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.pro06.Soundable"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.pro07.DataAccessObject"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec03.LocalExample"/>
+    <fullyQualifiedTypeName name="AAA"/>
 </qualifiedTypeNameHistroy>
