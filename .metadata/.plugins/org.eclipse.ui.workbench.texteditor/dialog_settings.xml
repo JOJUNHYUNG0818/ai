@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="package javaBasic.ch01.sec06;"/>
+		<item key="selection" value="&#x09;&#x09;try {"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;try {"/>
 			<item value="package javaBasic.ch01.sec06;"/>
 			<item value="&#x09;&#x09;"/>
 		</list>

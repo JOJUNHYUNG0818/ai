@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec10.Calculator"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec05.Singleton"/>
-    <fullyQualifiedTypeName name="javax.security.auth.login.AccountException"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec011.Calculator"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec011.Computer"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec13.Television"/>
-    <fullyQualifiedTypeName name="javaBasic3.ch06.sec15.Account"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec01.Phone"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec01.SmartPhone"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec02.Person"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec02.Student"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec02.Teacher"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.sec03.Calculator"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.sec03.Computer"/>
@@ -45,7 +32,6 @@
     <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제07.Computer"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제0711.Activity"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제0711.MainActivity"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="javaBasic5.ch08.sec01.A"/>
     <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.CCImple"/>
     <fullyQualifiedTypeName name="javaBasic5.ch08.sec02.Television"/>
@@ -60,4 +46,18 @@
     <fullyQualifiedTypeName name="javaBasic5.ch08.pro07.DataAccessObject"/>
     <fullyQualifiedTypeName name="javaBasic6.ch09.sec03.LocalExample"/>
     <fullyQualifiedTypeName name="AAA"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec04.Outter"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec04.Outter.Inner"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec04.A.B"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec05.B"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec05.CImpl"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec07.Remotecontrol"/>
+    <fullyQualifiedTypeName name="javaBasic6.ch09.sec05.A"/>
+    <fullyQualifiedTypeName name="javaBasic5.ch08.sec03.Bus"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.DefaultMenuLayout"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 </qualifiedTypeNameHistroy>
