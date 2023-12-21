@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec014.Driver"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec014.Bus"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec014.Vehicle"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.Phone"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.Calling"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.IPhone"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.sec015.SmartPhone"/>
-    <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제07.Machine"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제07.Computer"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제0711.Activity"/>
     <fullyQualifiedTypeName name="javaBasic4.ch07.확인문제0711.MainActivity"/>
@@ -57,7 +49,15 @@
     <fullyQualifiedTypeName name="java.util.TimeZone"/>
     <fullyQualifiedTypeName name="javaApp1.ch12.sec08.CalendarExample"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.rmi.server.LoaderHandler"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javaApp2.VectorEx"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="javaApp2.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="javaApp2.Borad"/>
 </qualifiedTypeNameHistroy>
