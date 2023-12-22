@@ -13,6 +13,7 @@
 		<item key="selection" value="hashCode"/>
 		<list key="findhistory">
 			<item value="hashCode"/>
+			<item value="equals"/>
 			<item value="hashcode"/>
 			<item value="&#x09;&#x09;try {"/>
 			<item value="package javaBasic.ch01.sec06;"/>
