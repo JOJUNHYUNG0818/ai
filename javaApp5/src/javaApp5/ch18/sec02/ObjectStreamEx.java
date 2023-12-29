@@ -49,10 +49,12 @@ class Member implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5413711528933648809L;
+	private static final long serialVersionUID = -5413711528933648809L; // 필드가 추가되도 문제생기지 않게 UID설정
 	String id;
 	String name;
 	int age;
+	//int point; // output때 없다 input에 넣을 경우 에러 (해결방법: 시리얼 번호 생성)
+	
 	
 	public Member(String id, String name, int age) {
 		super();
