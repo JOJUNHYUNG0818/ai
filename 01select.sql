@@ -105,3 +105,4 @@ select empno 사원번호, ename 사원이름 from emp where ename like '김%' or ename l
 select * from emp where mgr is null;
 --7   조건문 다음 순서순
 select * from emp where sal>=300 order by empno asc ;
+
