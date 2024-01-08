@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "nav1 nav1 nav1 nav1" "nav2 nav2 nav2 nav2" "nav3 nav3 nav3 nav3"
+    "nav4 nav4 nav4 nav4 nav4 nav4" "nav5 nav5 nav5 nav5 nav5 nav5"
+    "nav6 nav6 nav6" "aside aside aside" "section section section" "footer footer footer";
+  grid-template-columns: 8.3%, 8.3%, 8.3%, 8.3%, 8.3%, 8.3%, 8.3%, 8.3%, 8.3%,
+    8.3%, 8.3%, 8.3%;
+  grid-template-rows: 100px 100px 600px 100px;
+}
+#header {
+  background-color: aqua;
+  grid-area: header;
+}
+#nav1 {
+  background-color: yellow;
+  grid-area: nav1;
+}
+#nav2 {
+  background-color: yellowgreen;
+  grid-area: nav2;
+}
+#nav3 {
+  background-color: whitesmoke;
+  grid-area: nav3;
+}
+#nav4 {
+  background-color: turquoise;
+  grid-area: nav4;
+}
+#nav5 {
+  background-color: tomato;
+  grid-area: nav5;
+}
+
+#nav6 {
+  background-color: aquamarine;
+  grid-area: nav6;
+}
+#aside {
+  background-color: blue;
+  grid-area: aside;
+}
+#section {
+  background-color: blueviolet;
+  grid-area: section;
+}
+
+#footer {
+  background-color: brown;
+  grid-area: footer;
+}
