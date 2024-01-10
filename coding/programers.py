@@ -16,6 +16,17 @@ for x in arr:
 print(a)       
 """
 
+a = [1, 2, 3, 4, 5, 6, 7]
+answer=[]
+for x in range(0,len(a)):
+    if x%2==0:
+        answer+=[a[x]]*2
+    else :
+        answer +=[a[x]]*3
+print(answer)
+
+answer = [a]
+print(answer)
 
 
 
