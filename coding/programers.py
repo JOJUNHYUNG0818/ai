@@ -46,7 +46,7 @@ while i<len(arr):
         
 print(stk)
 """
-
+"""
 arr = [0, 1, 1, 2, 2, 3]
 k=3
 answer = []
@@ -61,4 +61,5 @@ for x in range(0,len(arr)):
                 answer.append(-1)
 
 print(answer)
-
+"""
+arr = [1, 2, 3, 4, 5, 6]
