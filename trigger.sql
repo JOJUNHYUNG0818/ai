@@ -192,6 +192,7 @@ use sqldb;
 select * from backup_userTbl;
 
 drop table backup_userTbl;
+-- 트리거 테이블 생성
 create table backup_userTbl
 (
   userID     CHAR(8) NOT NULL PRIMARY KEY, -- 사용자 아이디(PK)
@@ -208,20 +209,159 @@ create table backup_userTbl
 );
 
 drop trigger if exists but;
--- 트리거 작성하기
+-- 트리거 (수정) 작성하기
 delimiter //
 create trigger but
 	after update
     on usertbl
     for each row 
 begin
-    insert into but values (OLD.userID,OLD.name,OLD.birthYear,
+    insert into backup_userTbl values (OLD.userID,OLD.name,OLD.birthYear,
 							OLD.addr,OLD.mobile1,OLD.mobile2,OLD.height,OLD.mDate,
                             '수정', curdate(), current_user() );
 end //
 delimiter ;
 
+-- 트리거 (삭제) 작성하기
+delimiter //
+create trigger bud
+	after delete
+	on usertbl
+    for each row
+begin
+	insert into backup_userTbl values(OLD.userID,OLD.name,OLD.birthYear,
+							OLD.addr,OLD.mobile1,OLD.mobile2,OLD.height,OLD.mDate,
+                            '삭제', curdate(), current_user() );
+	end // 
+delimiter ;
+
+update usertbl set birthYear = 1977 where userid='BBK';
+select * from backup_userTbl;
+update usertbl set addr = '몽고' where userid = 'JKW';
+delete from usertbl where userid = 'YJS';
+
+drop trigger if exists uti;
+-- 삽입후에 경고 오류 발생시키고 메세지 띄우기
+delimiter //
+create trigger uti
+	after insert
+	on usertbl
+    for each row
+begin
+	signal sqlstate '45000' -- 강제 오류실행
+		set message_text = '데이터의 입력을 시도했습니다. 귀하의 정보가 서버에 기록되었습니다.';
+	end // 
+delimiter ;	
+
+insert into usertbl values('ABC','에비씨',1977,'서울','011','1111111',181,'2019-12-25');
+
+-- Before 트리거
+-- OLD는 변경되기전 자료, NEW 변경되고 난 후 자료
+-- 요구사항 입력할 때 생일 잘못 입력되지 않도록 1900이전 입력이면 0 입력 또는 올해 년도보다 이후의 년도 입력 되었으면 0 입력
+drop trigger if exists ubi;
+delimiter // 
+create trigger ubi
+	before insert
+    on usertbl
+    for each row
+begin
+	if new.birthyear <1900 then
+		set new.birthyear = 0;
+	elseif new.birthyear > year(curdate())then
+		set new.birthyear = year(curdate());
+	end if ; 
+    
+end //
+delimiter ;
+
+insert into usertbl values('AAA','에이',1877,'서울','011','1112222',181,'2022-12-25');
+insert into usertbl values('BBB','비비',2877,'경기','011','1113333',185,'2021-03-11');
 select * from usertbl;
 
-update usertbl set birthyear = 1977 where userid='BBK';
-update usertbl set birthyear = 1977 where userid='BBK';
+-- 주소가 '평양' 이면 '간첩'
+-- 전화번호가 '9999'입력되면 '010'으로 입력
+drop trigger if exists ubi2;
+delimiter // 
+create trigger ubi2
+	before insert
+    on usertbl
+    for each row
+begin
+	if new.addr='평양' then
+		set new.addr = '간첩';
+	elseif new.mobile1 = '99'then
+		set new.mobile1 = '010';
+    
+	end if ; 
+    
+end //
+delimiter ;
+insert into usertbl values('CCC','씨씨',1947,'평양','99','1112222',181,'2022-12-25');
+select * from usertbl;
+
+show triggers from sqldb;
+
+drop database if exists triggerdb;
+create database if not exists triggerdb;
+use triggerdb;
+
+-- 구매 테이블
+create table ordertbl(
+	orderNo int auto_increment primary key,
+    userid varchar(5),
+    prodName varchar(5),
+    orderamount int);
+
+-- 물품 테이블
+select*from prodtbl;
+create table prodtbl(
+	prodName varchar(5),
+    account int
+);
+
+drop table delibertbl;
+-- 배송 테이블
+create table delivertbl(
+	deliberNo int auto_increment primary key,
+    prodName varchar(5),
+    account int);
+
+-- 물품테이블에 물건을 삽입하기
+insert into prodtbl values('사과',100);
+insert into prodtbl values('배',100);
+insert into prodtbl values('귤',100);
+
+-- 물품 테이블에서 개수를 감소시크는 트리거
+drop trigger ordertg; 
+delimiter //
+	create trigger ordertg
+	after insert
+    on ordertbl
+    for each row
+begin
+	update prodtbl set account = account -new.orderamount
+			where prodName = new.prodName;
+end //
+delimiter ;
+
+drop trigger prodtg;
+-- 배송 테이블에 새 배송 건을 입력하는 트리거
+delimiter //
+	create trigger prodtg
+	after update
+    on prodtbl
+    for each row
+begin
+	declare orderAmount int;
+    set orderAmount = OLD.account - NEW.account;
+    insert into delivertbl(prodName, account)
+		values (NEW.prodName, orderAmount);
+end //
+delimiter ;
+
+select * from ordertbl;
+select * from prodtbl;
+
+insert into ordertbl values (null , 'JOHN', '배',5);
+insert into ordertbl values (null , 'DANG', '사과',9);
+

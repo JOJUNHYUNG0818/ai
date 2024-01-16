@@ -275,3 +275,4 @@ delimiter ;
 select * from usertbl;
 call ifelseProc('조용필',@yearOut);
 select @yearOut;
+
