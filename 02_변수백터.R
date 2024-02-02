@@ -143,3 +143,10 @@ my.info$score
 my.info[[3]]
 my.info$status
 my.info$score[1]
+a<-4
+b<-5
+c<-a+b
+c
+
+vc.1<-c(95,86,47,55,68)
+vc.1
